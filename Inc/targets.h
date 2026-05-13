@@ -16,13 +16,13 @@
 //#define AIKON20X20_F051
 //#define AIKONSINGLE_F051
 //#define FLYCOLOR_F051
-#define AM32REF_F051
+//#define AM32REF_F051
 //#define BLPWR_F051
 //#define HVFLYCOLOR_F051
 //#define FLASHHOBBY_F051
 //#define SEQURE_G071
 //#define RHINO80A_F051
-
+#define EMILIS_G071
 
 
 //#define REF_F031
@@ -301,6 +301,22 @@
 #define SLOW_RAMP_DOWN
 #endif
 /*******************************   G071 Targets *********************************/
+
+#ifdef EMILIS_G071
+#define FILE_NAME "EMILIS_G071"
+#define FIRMWARE_NAME "EMILIS_G071 "
+#define DEAD_TIME 60
+#define MILLIVOLT_PER_AMP 2
+#define CURRENT_OFFSET 0
+#define TARGET_VOLTAGE_DIVIDER 110
+#define HARDWARE_GROUP_G0_A
+#define USE_SERIAL_TELEMETRY
+#define VOLTAGE_ADC_CHANNEL LL_ADC_CHANNEL_4
+#define VOLTAGE_ADC_PIN LL_GPIO_PIN_4
+#define CURRENT_ADC_CHANNEL LL_ADC_CHANNEL_5
+#define CURRENT_ADC_PIN LL_GPIO_PIN_5
+#define COMMON_COMP LL_COMP_INPUT_PLUS_IO3
+#endif
 
 #ifdef  GEN_64K_G071
 #define FILE_NAME				"GEN_64K_G071"
