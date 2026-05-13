@@ -22,7 +22,7 @@
 //#define FLASHHOBBY_F051
 //#define SEQURE_G071
 //#define RHINO80A_F051
-#define EMILIS_G071
+//#define EMILIS_G071
 
 
 //#define REF_F031
